@@ -1,0 +1,17 @@
+### GET ALL REVIEWS
+GET http://localhost:3000/api/reviews
+
+### GET BY ID
+GET http://localhost:3000/api/reviews/5f67fecddcbf760e7a98a0fb
+
+### SAVE REVIEW
+POST http://localhost:3000/api/reviews
+Content-Type: application/json
+
+{
+  "date": "2020-09-20T23:00:10",
+  "rating": 4,
+  "comments": "Muito bom!",
+  "restaurant": "5f679ee1de868b09148e6d94",
+  "user": "5f67fd2c35d1440ca2e6ca6c"
+}

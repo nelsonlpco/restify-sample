@@ -1,0 +1,44 @@
+### GET RESTAURANTS
+GET http://localhost:3000/api/restaurants
+
+### GET RESTAURANTS BY ID
+GET http://localhost:3000/api/restaurants/
+
+### SAVE RESTAURANT
+POST http://localhost:3000/api/restaurants
+Content-Type: application/json
+
+{
+  "name": "Burger house"
+}
+
+### UPDATE RESTAURANT
+PUT http://localhost:3000/api/restaurants/5f679ee1de868b09148e6d94
+Content-Type: application/json
+
+{
+  "name": "Burger house #2"
+}
+
+### REMOVE RESTAURANT
+DELETE http://localhost:3000/api/restaurants/
+
+########## MENU #########
+
+### GET RESTAURANT MENU
+GET http://localhost:3000/api/restaurants/5f679ee1de868b09148e6d94/menu
+
+### INSERT MENU
+PUT http://localhost:3000/api/restaurants/5f679ee1de868b09148e6d94/menu
+Content-type: application/json
+
+[
+  {
+    "name": "Pork Burger",
+    "price": 22
+  },
+  {
+    "name": "Coca-Cola",
+    "price": 5
+  }
+]

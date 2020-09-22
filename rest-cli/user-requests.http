@@ -1,0 +1,39 @@
+###GET USERS
+GET http://localhost:3000/api/users?_page=2
+Accept-version: 1.0.0
+
+### GET USER BY ID
+GET HTTP://localhost:3000/api/users/5f69de1b6273b2503b91a73d
+
+### CREATE USER
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "Francoase",
+  "email": "francoase@gmail.com",
+  "password": "nelson123",
+  "age": 18
+}
+
+### UPDATE USER
+PUT http://localhost:3000/api/users/5f661dc52fe18c1e2ba564c3
+Content-Type: application/json
+
+{
+  "name": "Nelson Luiz",
+  "email": "nelson@gmail.com",
+  "password": "nelson123"
+}
+
+### PATCH USER
+PATCH http://localhost:3000/api/users/5f661dc52fe18c1e2ba564c3
+Content-Type: application/merge-patch+json
+
+{
+  "name": "Nelson Luiz Prado Canabarro de Olieira"
+}
+
+### DELETE USER
+DELETE  http://localhost:3000/api/users/5f661bd72276ad1d96614fa2
+
